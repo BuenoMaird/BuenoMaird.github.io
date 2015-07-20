@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.scss">
+  <link rel="stylesheet" href="css/animate.css">
+  <script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div id="page-content">
+
+
+  <div id="slides-container">
+  <!-- EXPLANATION TIME! The following data is working skrollr.js to move the viewport(Set by this 'data-100p') of the site based on how far the user has scrolled. The scroll mechanic is handled by the helper at the bottom of the css. -->
+    <div id="slides"
+      data-0="transform:translate(0%,0%);"
+      data-300p=""
+      data-400p="transform:translate(0%,-50%);"
+      data-650p=""
+      data-750p="transform:translate(-50%,-50%);"
+      data-1000p=""
+      data-1100p="transform:translate(-50%,0%);"
+    >
+      <div id="slide-1" class="slide">
+
+        <div id="slide1-Slide1in"
+            data-0p="opacity: 0; left: 0%; height: 50%;"
+            data-100p="opacity: 0.9;left: 45%;"
+            data-300p=""
+            data-400p="opacity: 0; height:0%;"
+        >
+
+          <div id="introInfo"
+            data-90p="height: 0%;"
+            data-150p="height: 100%"
+            data-300p=""
+            data-400p="height: 0%"
+          >
+            <img src="img/face.svg" id="mainPic" alt="A picture of a Ben's face">
+            <h1 id="infoS1">Hi There! My name is Ben.</br>
+            </br>
+            I am a junior Fullstack Developer and Designer based in Canberra.</h1>
+          </div>
+        </div>
+        <div class="caption"
+            data-0p="opacity: 1; transform: translate(0px,0px);"
+            data-300p=""
+            data-400p="opacity: 0; transform: translate(0px,100%);"
+            data-anchor-target="#helper"
+        >
+          <h1 id="s1Info">Welcome!</h1>
+          <h2 id="s1Call" class="animated infinite bounce">Please scroll..</h2>
+        </div>
+      </div>
+      <div id="slide-2" class="slide">
+
+        <div id="slide2-Slide2in"
+            data-400p="opacity: 0; right: 0%; height: 0%;"
+            data-450p="opacity: .9; right: 45%; height: 80%;"
+            data-600p=""
+            data-750p="opacity: 0; height:0%;"
+        >
+          <div id="aboutMeInfo"
+              data-400p="height: 0%;"
+              data-500p="height: 100%;"
+              data-600p=""
+              data-750p="height: 100%"
+          >
+          <h1 class="aboutH1">Education</h1>
+          <h2 class="aboutH2">Canberra Institue of Technology</h2>
+          <p class="aboutBody">While studying at the canberra institue of technology I was taught about all things design</p>
+          <p class="aboutBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui animi, nulla, eveniet dignissimos totam accusantium sint consectetur id rem nihil repellendus. Qui quos quia iusto deleniti, minus? Eum, assumenda rem.</p>
+            
+          </div>
+        </div>
+        <div class="caption"
+            data-300p="opacity: 0; transform:translate(200px,-200%)"
+            data-500p="opacity: 1; transform:translate(200px,-10px)"
+            data-600p="" 
+            data-750p="opacity: 0; transform:translate(400px,0px)"
+            data-anchor-target="#helper"
+        >
+          <h1 id="s2Info">About me</h1>
+        </div>        
+      </div>
+      <div id="slide-3" class="slide">
+        <div id="slide3-Slide3in"
+            data-400p="opacity: 0; right: -100%; height: 100%;"
+            data-450p="opacity: 1; right: 50%;"
+            data-600p=""
+            data-750p="opacity: 0; height:0%;"
+        >
+        </div>
+        <div class="caption"
+            data-250p="opacity: 0; transform:translate(300px,0px);"
+            data-300p="opacity: 1; transform:translate(0px,0px);"
+            data-anchor-target="#helper"
+        >
+          <h1>Projects</h1>
+          <p></p>
+        </div>
+      </div>
+      <div id="slide-4" class="slide">
+        <div class="caption"
+            data-430p="opacity: 0;"
+            data-450p="opacity: 1;"
+            data-anchor-target="#helper"
+        >
+          <h1>Contact</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- This is the thing that we will actually be scrolling against. It is essentially just giving us scroll access again after turning it with overflow hidden on the slides panels -->
+  <div id="helper">
+    <div class="marker m1"></div>
+    <div class="marker m2"></div>
+    <div class="marker m3"></div>
+    <div class="marker m4"></div>
+  </div>
+
+
+</div>
+
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$main-font:'Oleo Script';
+
+*,
+:before,
+:after {
+box-sizing: border-box;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+html, body {
+  width:100%;
+  height:100%;
+}
+
+#slides-container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#slides{
+  /* width: 100%;*/
+  /* height: 100%;*/
+  width: 200%; /*Set to 200 so that each slide fills the screen at 50%*/
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.slide{
+  -webkit-filter: sepia(.5);
+  filter: sepia(.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /*So it only takes up half of it's parent container*/
+  height: 50%; /*So it only takes up half of it's parent container*/
+}
+
+#slide-1{
+  background: url('../img/slide1-image.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+#slide-2{
+  background: url('../img/slide2-image.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-transform: translate(0,100%);
+  -ms-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+#slide-3{
+  background: url('../img/slide3-image.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-transform: translate(100%,100%);
+  -ms-transform: translate(100%,100%);
+  transform: translate(100%,100%);  
+}
+#slide-4{
+  background: url('../img/slide4-image.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-transform: translate(100%,0%);
+  -ms-transform: translate(100%,0%);
+  transform: translate(100%,0%);  
+}
+
+.caption{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  text-align: right;
+  color: rgba(47,125,130, 1);
+  width: 30%;
+  height: 30%;
+
+}
+ /*Overwriting formatting for text.*/
+p, h1{ margin: 0; }
+h1, h2, h3, h4, h5, h6{ margin-bottom: 0.2em;
+  font-family: 'Oleo Script';
+}
+
+p{ line-height: 1.333em;}
+
+/* Start slide 1 css */
+
+#s1Info{
+  font-size: 5em;
+  border-bottom: dotted 2px white;
+}
+#s1Call{
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  font-size: 3em;
+}
+
+#slide-1 .caption{
+  top: 35%;
+  right: auto;
+  left: 10%;
+  bottom: auto;
+  text-align: center;
+  color: white;
+}
+
+#slide-1 #slide1-Slide1in{ 
+  box-sizing: border-box;
+  position: absolute;
+  top:25%;
+  right: 0%;
+  background-color: rgba(229, 65, 33, 1);
+  height: 100%;
+  width: 50%;
+  padding: 0px 60px;
+  border-radius: 10px;
+  border: 10px dotted white;
+}
+
+#mainPic{
+  width: 50%;
+  height: 100%;
+}
+
+#infoS1{
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  padding-top: 40px;
+  font-size: 2em;
+  font-family: 'Roboto';
+  color: white;
+  text-align: center;
+}
+
+#s1Container{
+  height: auto;
+  width: auto;
+}
+
+#introInfo{
+  height: 50%;
+  // text-align: center;
+  overflow: hidden;
+}
+
+/* End slide 1 css */
+
+/*////////////////////////*/
+
+/* Start slide 2 css */
+
+
+#slide-2 #slide2-Slide2in{ 
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  background-color: rgba(229, 65, 33, 1);
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 10px dotted white;
+}
+
+#s2Info{
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  background-color: rgba(47,125,130, 1);
+  color: white;
+  border-radius: 50%;
+  border: 10px dashed white;
+}
+
+#aboutMeInfo{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aboutH1{
+  font-size: 3em;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted white;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.aboutH2{
+  text-align: left;
+  font-size: 1.8em;
+  font-family: 'Oleo Script'
+}
+
+.aboutBody{
+  font-family:'Roboto';
+  text-align: left;
+}
+
+/* End slide 2 css */
+
+/*////////////////////////*/
+
+#slide-3 .caption{
+  left: 5%;
+  right: auto; /*You have to set right auto or setting the left 5% won't work*/
+  color: slategray;
+  text-align: left;
+}
+
+#slide-4 .caption{
+  right: auto;
+  left: 5%;
+  top: 5%;
+  bottom: auto;
+  color: slategray;
+  text-align: left;
+}
+
+#helper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 600%; /*Set to 600% so it is double the size of the #slides element PLUS the break points in the scroll events. !IMPORTANT! Update this size if you add more slides.*/
+  width: 20px; /*Just for admin reference*/
+}
+
+.marker{
+  height: 25%;
+  width: 100%;
+}
+
+.m1{
+  background-color: red;
+}
+
+.m2{
+  background-color: green;
+}
+
+.m3{
+  background-color: blue;
+}
+
+.m4{
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
