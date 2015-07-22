@@ -276,7 +276,7 @@ p{ line-height: 1.333em;}
   overflow: hidden;
   background: url(http://www.fillmurray.com/200/200);
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 50%
 }
 
 .pListR{
@@ -284,6 +284,9 @@ p{ line-height: 1.333em;}
   vertical-align: top;
   width: 66%;
   margin-left: 20px;
+  font-family: 'Roboto';
+  overflow: hidden;
+  font-size: .9em;
 }
 
 /*End slide 3*/
