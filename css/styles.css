@@ -377,7 +377,7 @@ p{ line-height: 1.333em;}
   left: 0;
   top: 0;
   height: 600%; /*Set to 600% so it is double the size of the #slides element PLUS the break points in the scroll events. !IMPORTANT! Update this size if you add more slides.*/
-  width: 20px; /*Just for admin reference*/
+  // width: 20px; /*Just for admin reference*/
 }
 
 .marker{
