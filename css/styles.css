@@ -55,21 +55,21 @@ a{
 
 
 #slide-2{
-  background: url('../img/slide2-image.jpg') no-repeat center center;
+  background: url('../img/slide2-image.png') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(0,100%);
   -ms-transform: translate(0,100%);
   transform: translate(0,100%);
 }
 .slide-3{
-  background: url('../img/slide3-image.jpg') no-repeat center center;
+  background: url('../img/slide3-image.png') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,100%);
   -ms-transform: translate(100%,100%);
   transform: translate(100%,100%);  
 }
 #slide-4{
-  background: url('../img/slide4-image.jpg') no-repeat center center;
+  background: url('../img/slide4-image.png') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,0%);
   -ms-transform: translate(100%,0%);
@@ -377,7 +377,7 @@ p{ line-height: 1.333em;}
   left: 0;
   top: 0;
   height: 600%; /*Set to 600% so it is double the size of the #slides element PLUS the break points in the scroll events. !IMPORTANT! Update this size if you add more slides.*/
-  width: 0px; /*Just for admin reference*/
+  widthpngpx; /*Just for admin reference*/
 }
 
 .marker{
