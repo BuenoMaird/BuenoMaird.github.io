@@ -18,20 +18,6 @@ html, body {
   height:100%;
 }
 
-.skillList{
-  list-style: none;
-  font-family: 'Roboto';
-  display: inline-block;
-}
-
-li{
-  display: inline-block;
-  vertical-align: top;
-  margin: 0px 30px 10px 0px;
-  border-bottom: 2px solid white;
-  color: white
-}
-
 #slides-container{
   width: 100%;
   height: 100%;
@@ -75,7 +61,7 @@ a{
   -ms-transform: translate(0,100%);
   transform: translate(0,100%);
 }
-#slide-3{
+.slide-3{
   background: url('../img/slide3-image.jpg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,100%);
@@ -137,12 +123,12 @@ p{ line-height: 1.333em;}
   position: absolute;
   top:25%;
   right: 0%;
-  background-color: rgba(229, 65, 33, 1);
+  background-color: rgba(229, 65, 33, .9);
   height: 100%;
   width: 50%;
   padding: 0px 60px;
   border-radius: 10px;
-  border: 10px solid white;
+  // border: 10px solid white;
 }
 
 #mainPic{
@@ -179,16 +165,15 @@ p{ line-height: 1.333em;}
 /* Start slide 2 css */
 
 
-#slide-2 #slide2-Slide2in{ 
+#slide-2 .slide2-Slide2in{ 
   position: absolute;
   right: 10%;
   top: 10%;
-  background-color: rgba(229, 65, 33, 1);
+  background-color: rgba(121, 160, 163, 1);
   height: 100%;
   width: 50%;
   overflow: hidden;
   border-radius: 20px;
-  border: 10px solid white;
   min-width: 300px;
 }
 
@@ -196,14 +181,28 @@ p{ line-height: 1.333em;}
   text-align: center;
   height: 200px;
   width: 200px;
-  line-height: 170px;
+  line-height: 180px;
   background-color: rgba(47,125,130, 1);
   color: white;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 5px solid white;
 }
 
-#aboutMeInfo{
+.skillList{
+  list-style: none;
+  font-family: 'Roboto';
+  display: inline-block;
+}
+
+.SL-li{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 30px 10px 0px;
+  // border-bottom: 2px solid white;
+  color: white
+}
+
+.aboutMeInfo{
   text-align: center;
   width: 80%;
   margin: 0 auto;
@@ -236,23 +235,131 @@ p{ line-height: 1.333em;}
 
 /* Start slide 3 css */
 
-#slide-3 .caption{
+.slide-3 .caption{
   left: 75%;
   right: auto; /*You have to set right auto or setting the left 5% won't work*/
   color: slategray;
   text-align: left;
 }
 
-#slide-3 #slide3-Slide3in{ 
+.slide-3 .slide3-Slide3in{ 
   position: absolute;
   background-color: rgba(229, 65, 33, 1);
   width: 50%;
   overflow: hidden;
   border-radius: 20px;
-  border: 10px solid white;
+  padding: 20px;
 }
 
+.proImage{
+  width: 100%;
+  height: 25%;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 20px 20px;
+}
+
+#proImg1{
+  background: url(../img/tictactoe.png);
+  background-size: cover
+}
+
+#proImg2{
+  background: url(../img/musicroom.png);
+  background-size: cover
+}
+
+#proImg3{
+  background: url(../img/younghort.png);
+  background-size: cover
+}
+
+#proImg4{
+  background: url(../img/bandwiki.png);
+  background-size: cover
+}
+
+.proHead{
+  width: 100%;
+  height: 20%;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.proContent{
+  width: 100%;
+  height: 50%;
+  color: rgba(255, 255, 255, .7)
+}
+
+.contLeft{
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  height: 100%;
+  border-right: 2px solid white;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.contRight{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-left: -4px;
+  height: 100%;
+  text-align: center;
+    overflow: scroll;
+}
+
+.contentList{
+  list-style-type: none;
+  padding: 0;
+}
+
+.contLi{
+  margin-bottom: 10px;
+}
+
+
 #s3Info{
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  line-height: 180px;
+  background-color: rgba(47,125,130, 1);
+  color: white;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+/*End slide 3*/
+
+/*Start slide 4*/
+
+#slide4-Slide4in{
+  position: absolute;
+  left: 10%;
+  width: 50%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#slide4-Slide4in a{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#slide-4 .caption{
+  right: auto;
+  left: 5%;
+  top: 5%;
+  bottom: auto;
+  color: slategray;
+  text-align: left;
+}
+
+#s4Info{
   text-align: center;
   height: 200px;
   width: 200px;
@@ -263,44 +370,7 @@ p{ line-height: 1.333em;}
   border: 10px solid white;
 }
 
-.pList{
-  height: 25%;
-  padding: 5px 20px 5px 20px;
-}
-
-.pListL{
-  display: inline-block;
-  vertical-align: top;
-  height: 100%;
-  width: 30%;
-  overflow: hidden;
-  background: url(http://www.fillmurray.com/200/200);
-  background-size: cover;
-  border-radius: 50%
-}
-
-.pListR{
-  display: inline-block;
-  vertical-align: top;
-  width: 66%;
-  margin-left: 20px;
-  font-family: 'Roboto';
-  overflow: hidden;
-  font-size: .9em;
-}
-
-/*End slide 3*/
-
-
-
-#slide-4 .caption{
-  right: auto;
-  left: 5%;
-  top: 5%;
-  bottom: auto;
-  color: slategray;
-  text-align: left;
-}
+/*End Slide 4*/
 
 #helper{
   position: absolute;
