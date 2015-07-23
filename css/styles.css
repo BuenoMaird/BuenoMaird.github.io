@@ -55,21 +55,21 @@ a{
 
 
 #slide-2{
-  background: url('../img/slide2-image.JPG') no-repeat center center;
+  background: url('../img/slide2-image.jpg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(0,100%);
   -ms-transform: translate(0,100%);
   transform: translate(0,100%);
 }
 .slide-3{
-  background: url('../img/slide3-image.JPG') no-repeat center center;
+  background: url('../img/slide3-image.jpg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,100%);
   -ms-transform: translate(100%,100%);
   transform: translate(100%,100%);  
 }
 #slide-4{
-  background: url('../img/slide4-image.JPG') no-repeat center center;
+  background: url('../img/slide4-image.jpg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,0%);
   -ms-transform: translate(100%,0%);
