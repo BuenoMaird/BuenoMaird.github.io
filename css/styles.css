@@ -49,27 +49,27 @@ a{
 }
 
 #slide-1{
-  background: url('../img/slide1-svg.svg') no-repeat center center;
+  background: url('../img/slide1-replace.svg') no-repeat center center;
   background-size: cover;
 }
 
 
 #slide-2{
-  background: url('../img/slide2-image.png') no-repeat center center;
+  background: url('../img/slide2-replace.svg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(0,100%);
   -ms-transform: translate(0,100%);
   transform: translate(0,100%);
 }
 .slide-3{
-  background: url('../img/slide3-image.png') no-repeat center center;
+  background: url('../img/slide3-replace.svg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,100%);
   -ms-transform: translate(100%,100%);
   transform: translate(100%,100%);  
 }
 #slide-4{
-  background: url('../img/slide4-image.png') no-repeat center center;
+  background: url('../img/slide2-replace.svg') no-repeat center center;
   background-size: cover;
   -webkit-transform: translate(100%,0%);
   -ms-transform: translate(100%,0%);
@@ -121,9 +121,8 @@ p{ line-height: 1.333em;}
 #slide-1 #slide1-Slide1in{ 
   box-sizing: border-box;
   position: absolute;
-  top:25%;
-  right: 0%;
-  background-color: rgba(229, 65, 33, .9);
+  left: 0%;
+  // background-color: rgba(150, 150, 150, .5);
   height: 100%;
   width: 50%;
   padding: 0px 60px;
@@ -136,15 +135,27 @@ p{ line-height: 1.333em;}
   height: 100%;
 }
 
-#infoS1{
+.infoS1{
   display: inline-block;
   vertical-align: top;
   width: 49%;
-  padding-top: 40px;
-  font-size: 2em;
-  font-family: 'Roboto';
+  font-size: 1.5em;
+  font-family: 'Roboto', helvetica;
   color: white;
   text-align: center;
+}
+
+.infoS1Blurb{
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+#infoS1Head{
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Oleo Script', helvetica;
+  font-size: 2.5em;
+  border-bottom: 5px solid white;
 }
 
 #s1Container{
@@ -169,7 +180,7 @@ p{ line-height: 1.333em;}
   position: absolute;
   right: 10%;
   top: 10%;
-  background-color: rgba(121, 160, 163, 1);
+  // background-color: rgba(121, 160, 163, 1);
   height: 100%;
   width: 50%;
   overflow: hidden;
@@ -179,10 +190,10 @@ p{ line-height: 1.333em;}
 
 #s2Info{
   text-align: center;
-  height: 200px;
-  width: 200px;
-  line-height: 180px;
-  background-color: rgba(47,125,130, 1);
+  height: 180px;
+  width: 180px;
+  line-height: 160px;
+  // background-color: rgba(47,125,130, 1);
   color: white;
   border-radius: 50%;
   border: 5px solid white;
@@ -225,6 +236,10 @@ p{ line-height: 1.333em;}
   color: white;
 }
 
+.aboutH3{
+  color: white;
+}
+
 .aboutBody{
   font-family:'Roboto';
   color: white;
@@ -245,8 +260,8 @@ p{ line-height: 1.333em;}
 
 .slide-3 .slide3-Slide3in{ 
   position: absolute;
-  background-color: rgba(229, 65, 33, 1);
-  width: 50%;
+  // background-color: rgba(229, 65, 33, 1);
+  width: 70%;
   overflow: hidden;
   border-radius: 20px;
   padding: 20px;
@@ -257,6 +272,7 @@ p{ line-height: 1.333em;}
   height: 25%;
   margin-bottom: 20px;
   border-radius: 10px 10px 20px 20px;
+  border: 5px solid white;
 }
 
 #proImg1{
@@ -285,7 +301,7 @@ p{ line-height: 1.333em;}
   font-size: 3em;
   color: white;
   text-align: center;
-  border-bottom: 2px solid white;
+  // border-bottom: 2px solid white;
   margin-bottom: 20px;
 }
 
@@ -328,10 +344,10 @@ p{ line-height: 1.333em;}
 
 #s3Info{
   text-align: center;
-  height: 200px;
-  width: 200px;
-  line-height: 180px;
-  background-color: rgba(47,125,130, 1);
+  height: 180px;
+  width: 180px;
+  line-height: 160px;
+  // background-color: rgba(47,125,130, 1);
   color: white;
   border-radius: 50%;
   border: 5px solid white;
@@ -343,9 +359,10 @@ p{ line-height: 1.333em;}
 
 #slide4-Slide4in{
   position: absolute;
-  left: 10%;
+  left: 0%;
   width: 50%;
   color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 
 #slide4-Slide4in a{
@@ -363,17 +380,23 @@ p{ line-height: 1.333em;}
 
 #s4Info{
   text-align: center;
-  height: 200px;
-  width: 200px;
-  line-height: 180px;
-  background-color: rgba(47,125,130, 1);
+  height: 180px;
+  width: 180px;
+  line-height: 160px;
+  // background-color: rgba(47,125,130, 1);
   color: white;
   border-radius: 50%;
   border: 5px solid white;
 }
 
-.connect{
+.connectHead{
+  font-size: 3em;
+}
+
+.connectInfo{
+  font-size: 1.3em;
   font-family: 'Roboto', helvetica;
+  line-height: 2em;
 }
 
 /*End Slide 4*/
