@@ -84,7 +84,6 @@ a{
   color: rgba(47,125,130, 1);
   width: 30%;
   height: 30%;
-
 }
  /*Overwriting formatting for text.*/
 p, h1{ margin: 0; }
@@ -188,6 +187,16 @@ p{ line-height: 1.333em;}
   min-width: 300px;
 }
 
+#slide-2 .caption{
+  position: absolute;
+  bottom: 10px;
+  right: 65px;
+  text-align: right;
+  color: rgba(47,125,130, 1);
+  width: 30%;
+  height: 30%;
+}
+
 #s2Info{
   text-align: center;
   height: 180px;
@@ -218,6 +227,7 @@ p{ line-height: 1.333em;}
   width: 80%;
   margin: 0 auto;
   min-width: 200px;
+  overflow: scroll;
 }
 
 .aboutH1{
@@ -243,6 +253,8 @@ p{ line-height: 1.333em;}
 .aboutBody{
   font-family:'Roboto';
   color: white;
+  text-align: left;
+  line-height: 25px;
 }
 
 /* End slide 2 css */
@@ -252,8 +264,7 @@ p{ line-height: 1.333em;}
 /* Start slide 3 css */
 
 .slide-3 .caption{
-  left: 75%;
-  right: auto; /*You have to set right auto or setting the left 5% won't work*/
+  right: -65px;
   color: slategray;
   text-align: left;
 }
@@ -317,9 +328,15 @@ p{ line-height: 1.333em;}
   width: 70%;
   height: 100%;
   border-right: 2px solid white;
-  text-align: center;
+  text-align: left;
   padding: 0px 10px 0px 10px;
   font-family: 'Roboto', helvetica;
+  overflow: scroll;
+}
+
+.contLeft p{
+  margin-bottom: 10px;
+  line-height: 25px;
 }
 
 .contRight{
@@ -329,7 +346,7 @@ p{ line-height: 1.333em;}
   margin-left: -4px;
   height: 100%;
   text-align: center;
-    overflow: scroll;
+  overflow: scroll;
 }
 
 .contentList{
@@ -371,8 +388,8 @@ p{ line-height: 1.333em;}
 
 #slide-4 .caption{
   right: auto;
-  left: 5%;
-  top: 5%;
+  left: 80px;
+  top: 15px;
   bottom: auto;
   color: slategray;
   text-align: left;
@@ -387,6 +404,7 @@ p{ line-height: 1.333em;}
   color: white;
   border-radius: 50%;
   border: 5px solid white;
+  overflow: scroll;
 }
 
 .connectHead{
@@ -406,7 +424,7 @@ p{ line-height: 1.333em;}
   left: 0;
   top: 0;
   height: 600%; /*Set to 600% so it is double the size of the #slides element PLUS the break points in the scroll events. !IMPORTANT! Update this size if you add more slides.*/
-  widthpngpx; /*Just for admin reference*/
+  width: 20px; /*Just for admin reference*/
 }
 
 .marker{
